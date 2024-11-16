@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-image: linear-gradient(to bottom left, #2A2B3F, #844A3C);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+input{
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    background: transparent;
+}
