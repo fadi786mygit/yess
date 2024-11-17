@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",  // replace with your backend entry file
+      "src": "Node.js",  
       "use": "@vercel/node"  // indicates that this is a Node.js server
-    },
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/server.js"  // route all requests to your Node.js server
+      "dest": "/"  // route all requests to your Node.js server
     }
   ]
 }
