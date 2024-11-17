@@ -12,7 +12,7 @@ const Form = require('./Models/userSchema'); // Adjust path as needed
 connectdb();
 app.use(express.json())
 app.use(cors({
-       origin:["http://deploy-mern-1whq.vercel.app"],
+       origin:["https://yes-6bq8.vercel.app/"],
            methods:["POST", "GET"],
            credentials: true
 }
