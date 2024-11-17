@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "Node.js",  
-      "use": "@vercel/node"  // indicates that this is a Node.js server
+      "src": "*.js",  
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"  // route all requests to your Node.js server
+      "dest": "/"  
     }
   ]
 }
