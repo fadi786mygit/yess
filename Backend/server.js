@@ -7,9 +7,16 @@ const PORT = process.env.PORT || 5052;
 const Form = require('./Models/userSchema'); // Adjust path as needed
 
 
+
+
 connectdb();
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+       origin:["http://deploy-mern-1whq.vercel.app"],
+           methods:["POST", "GET"],
+           credentials: true
+}
+       ));
 
 app.get("/",(req,res)=>{
     res.json({success:true,message:"Welcome to the Express",status:200});
