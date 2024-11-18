@@ -30,7 +30,7 @@ const Home = () => {
     if (name && contact && email) {
       try {
         // Submit data to the backend
-        const response = await axios.post("https://yes-2i75.onrender.com/submit", {
+        const response = await axios.post("https://yes-backend-p357.onrender.com/submit", {
           name,
           contact,
           email,
