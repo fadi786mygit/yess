@@ -30,7 +30,7 @@ const Home = () => {
     if (name && contact && email) {
       try {
         // Submit data to the backend
-        const response = await axios.post('https://yes-6bq8.vercel.app/submit', {
+        const response = await axios.post('http://localhost:5000/submit', {
           name,
           contact,
           email,

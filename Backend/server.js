@@ -11,12 +11,7 @@ const Form = require('./Models/userSchema'); // Adjust path as needed
 
 connectdb();
 app.use(express.json())
-app.use(cors({
-       origin:["https://yes-frontend-mern.vercel.app/"],
-           methods:["POST", "GET"],
-           credentials: true
-}
-       ));
+app.use(cors())
 
 app.get("/",(req,res)=>{
     res.json({success:true,message:"Welcome to the Express",status:200});
