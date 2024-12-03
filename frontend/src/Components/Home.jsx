@@ -1,142 +1,70 @@
-import React, { useState } from 'react';
-import axios from "axios";
+import React from 'react'
+import yesimage from '../Components/images/yesimage.jpg'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
+
+
 
 const Home = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    contact: '',
-    email: '',
-    cnic: '',
-    startupName: '',
-    startupCategory: '',
-    noofteammembers: '',
-    teamMembersNames: '',
-    instituteName: '',
-    departmentName: '',
-    reason: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  
-    const { name, contact, email, cnic, startupName, startupCategory,noofteammembers, teamMembersNames, instituteName, departmentName, reason } = formData;
-  
-    // Check if mandatory fields are filled
-    if (name && contact && email) {
-      try {
-        // Submit data to the backend
-        const response = await axios.post("https://yes-backend-p357.onrender.com/submit", {
-          name,
-          contact,
-          email,
-          cnic,
-          startupName,
-          startupCategory,
-          teamMembersNames,
-          noofteammembers,
-          instituteName,
-          departmentName,
-          reason,
-        });
-  
-        if (response.status === 201) {
-          window.alert('Form submitted successfully!');
-  
-          // Clear form data
-          setFormData({
-            name: '',
-            contact: '',
-            email: '',
-            cnic: '',
-            startupName: '',
-            startupCategory: '',
-            noofteammembers,
-            teamMembersNames: '',
-            instituteName: '',
-            departmentName: '',
-            reason: '',
-          });
-  
-          // Optionally reload the page
-          window.location.reload();
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error);
-        window.alert('An error occurred while submitting the form. Please try again later.');
-      }
-    } else {
-      window.alert('Please enter all required details first!');
-    }
-  };
-
-
-
-
   return (
+    <div className='navbar'>
+      <div className="text"><h1>Yes Chapter 4</h1></div>
 
+      <button onClick={() => { window.location.href = "/register" }} className='btn btn-primary d-flex justify-content-end justify-content-sm-end'>Register</button>
 
-    <div className='myform d-flex justify-content-center align-items-center p-4'>
-      <form
-        onSubmit={handleSubmit}
-        className='border border-2 bg-transparent border-dark d-flex flex-column col-lg-6 justify-content-center align-items-center text-white fs-5 p-4 mt-3'
-      >
-        <h2 className='text-white text-center'>YES Chapter 4</h2>
-        <h4 className='text-white text-center'>Registrations Are Open!</h4>
+      <img src={yesimage} />
 
-        <label>Your Name</label>
-        <input type='text' name='name' value={formData.name} onChange={handleChange} required />
-
-        <label>Contact No</label>
-        <input type='text' name='contact' value={formData.contact} onChange={handleChange} required />
-
-        <label>Email</label>
-        <input type='text' name='email' value={formData.email} onChange={handleChange} required />
-
-        <label>CNIC No</label>
-        <input type='text' name='cnic' value={formData.cnic} onChange={handleChange} required />
-
-        <label>Startup Name</label>
-        <input type='text' name='startupName' value={formData.startupName} onChange={handleChange} required />
-
-        <label>Startup Category</label>
-        <input type='text' name='startupCategory' value={formData.startupCategory} onChange={handleChange} required />
-
-        <label>Number of Team Members</label>
-        <select
-          className='w-75 text-center text-black bg-transparent'
-          name='noofteammembers'
-          value={formData.noofteammembers}
-          onChange={handleChange}
-          required
-        >
-          <option value='2'>2</option>
-          <option value='3'>3</option>
-          <option value='4'>4</option>
-        </select>
-
-        <label>Names of Team Members</label>
-        <input type='text' name='teamMembersNames' value={formData.teamMembersNames} onChange={handleChange} required />
-
-        <label>Institute Name</label>
-        <input type='text' name='instituteName' value={formData.instituteName} onChange={handleChange} required />
-
-        <label>Department Name</label>
-        <input type='text' name='departmentName' value={formData.departmentName} onChange={handleChange} required />
-
-        <label>Why YES?</label>
-        <input type='text' name='reason' value={formData.reason} onChange={handleChange} required />
-
-        <button type='submit' className='btn btn-primary mt-2 w-25 sm-w-50'>
-          Submit
-        </button>
-      </form>
+    {/* <div className="container">
+      <div className="row">
+        <div className="col-md-4">
+  <div className="mycard d-flex justify-content-center align-items-center gap-3">
+      <div className="cards d-flex justify-content-center gap-5">
+    <Card style={{ width: '18rem', height: '6rem' }}>
+      <Card.Img variant="top" src={yesimage} />
+      <Card.Body className="bg-dark text-white">
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
     </div>
-  );
-};
 
-export default Home;
+    <div className="col-md-4">
+    <Card style={{ width: '18rem', height: '6rem' }}>
+      <Card.Img variant="top" src={yesimage} />
+      <Card.Body className="bg-dark text-white">
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </div>
+    <div className="col-md-4">
+    <Card style={{ width: '18rem', height: '6rem' }}>
+      <Card.Img variant="top" src={yesimage} />
+      <Card.Body className="bg-dark text-white">
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </div>
+    </div>
+  </div>
+</div>
+</div> */}
+</div>
+
+
+    
+  )
+}
+
+export default Home
