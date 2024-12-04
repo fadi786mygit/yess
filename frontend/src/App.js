@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {  Route, Routes } from "react-router-dom";
 import Home from "./Components/Home"
 import Register from "./Pages/Register";
+import Yes1 from "./Pages/Yes1";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Routes> 
       <Route path="/" element={<Home/>}/>
       <Route path="/register" element={<Register/>}/>
+      <Route path="/yes1" element={<Yes1/>}/>
 
     </Routes>
 

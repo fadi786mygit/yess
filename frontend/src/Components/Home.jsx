@@ -11,56 +11,137 @@ const Home = () => {
     <div className='navbar'>
       <div className="text"><h1>Yes Chapter 4</h1></div>
 
-      <button onClick={() => { window.location.href = "/register" }} className='btn btn-primary d-flex justify-content-end justify-content-sm-end'>Register</button>
+      {/* <button onClick={() => { window.location.href = "/register" }} className='btn btn-primary d-flex justify-content-end justify-content-sm-end'>Register</button> */}
+      {/* <div className='w-100' >
 
-      <img src={yesimage} />
+              <img src={yesimage} />
+      </div> */}
 
-    {/* <div className="container">
-      <div className="row">
-        <div className="col-md-4">
-  <div className="mycard d-flex justify-content-center align-items-center gap-3">
-      <div className="cards d-flex justify-content-center gap-5">
-    <Card style={{ width: '18rem', height: '6rem' }}>
-      <Card.Img variant="top" src={yesimage} />
-      <Card.Body className="bg-dark text-white">
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+<div
+  className="image-container"
+  style={{
+    position: 'relative',
+    width: '100%',
+    height: '600px',
+  }}
+>
+  {/* Background Image */}
+  <div
+    style={{
+      backgroundImage: `url(${yesimage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '100%',
+      height: '100%',
+      opacity: '0.19',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+    }}
+  ></div>
+
+  {/* Text Overlay */}
+  <div
+    className="d-flex flex-column align-items-center justify-content-center text-center"
+    style={{
+      position: 'relative',
+      zIndex: 1,
+      height: '100%',
+      color: '#fff',
+      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)',
+    }}
+  >
+    <h1 className="fs-1 fw-bold">YOUNG ENTREPRENEUR SUMMIT CHAPTERS</h1>
+    <h3>YES is a platform to encourage entrepreneurial ideas and talent of young entrepreneurs.</h3>
+    <p className="fs-5">Discover, innovate, and inspire through your entrepreneurial journey.</p>
+    <button 
+      onClick={() => { window.location.href = "/register" }} 
+      className="btn btn-primary mt-3"
+    >
+      Register Now
+    </button>
     </div>
 
-    <div className="col-md-4">
-    <Card style={{ width: '18rem', height: '6rem' }}>
-      <Card.Img variant="top" src={yesimage} />
-      <Card.Body className="bg-dark text-white">
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div className="container mt-5">
+  <div className="row">
+    <div className="col-md-4 col-12 mt-3">
+      <Card className="h-100">
+        <Card.Img 
+          variant="top" 
+          src={yesimage} 
+          style={{ objectFit: 'cover', height: '200px' }} 
+          alt="Card image" 
+        />
+        <Card.Body className="bg-dark text-white d-flex flex-column">
+          <Card.Title>Yes Chapter 1</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </Card.Text>
+          <Button 
+          onClick={() => { window.location.href = "/yes1" }}
+            variant="primary" 
+            className="mt-auto" // Ensures button sticks to the bottom
+          >
+            See more
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
-    <div className="col-md-4">
-    <Card style={{ width: '18rem', height: '6rem' }}>
-      <Card.Img variant="top" src={yesimage} />
-      <Card.Body className="bg-dark text-white">
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+
+    <div className="col-md-4 col-12 mt-3">
+      <Card className="h-100">
+        <Card.Img 
+          variant="top" 
+          src={yesimage} 
+          style={{ objectFit: 'cover', height: '200px' }} 
+          alt="Card image" 
+        />
+        <Card.Body className="bg-dark text-white d-flex flex-column">
+          <Card.Title>Yes Chapter 2</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </Card.Text>
+          <Button 
+            variant="primary" 
+            className="mt-auto"
+          >
+            See more
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
+
+    <div className="col-md-4 col-12 mt-3">
+      <Card className="h-100">
+        <Card.Img 
+          variant="top" 
+          src={yesimage} 
+          style={{ objectFit: 'cover', height: '200px' }} 
+          alt="Card image" 
+        />
+        <Card.Body className="bg-dark text-white d-flex flex-column">
+          <Card.Title>Yes Chapter 3</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </Card.Text>
+          <Button 
+            variant="primary" 
+            className="mt-auto"
+          >
+            See more
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
   </div>
 </div>
-</div> */}
+
+
+
+  </div>
 </div>
+
+
 
 
     
