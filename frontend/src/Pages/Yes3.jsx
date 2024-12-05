@@ -1,17 +1,18 @@
 import React from 'react'
-import img18 from '../Components/images/18.jpg'
-import img17 from '../Components/images/17.jpg'
-import img16 from '../Components/images/16.jpg'
 import Carousel from 'react-bootstrap/Carousel';
+import img2 from '../Components/images/2.jpg'
+import img3 from '../Components/images/3.jpg'
+import img4 from '../Components/images/4.jpg'
 
-const Yes1 = () => {
+const Yes3 = () => {
   return (
-<>
-    <Carousel>
+    <div>
+      <>
+      <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={img18}
+          src={img2}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -22,7 +23,7 @@ const Yes1 = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={img17}
+          src={img3}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -33,7 +34,7 @@ const Yes1 = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={img16}
+          src={img4}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -45,7 +46,9 @@ const Yes1 = () => {
       </Carousel.Item>
     </Carousel>
     </>
+    </div>
   )
 }
 
-export default Yes1
+export default Yes3
+

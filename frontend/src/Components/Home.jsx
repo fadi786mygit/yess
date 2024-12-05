@@ -2,6 +2,9 @@ import React from 'react'
 import yesimage from '../Components/images/yesimage.jpg'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import img16 from '../Components/images/16.jpg';
+import yes2 from '../Components/images/yes2.jpg';
+import yes3 from '../Components/images/yes3.jpg';
 
 
 
@@ -68,14 +71,14 @@ const Home = () => {
       <Card className="h-100">
         <Card.Img 
           variant="top" 
-          src={yesimage} 
+          src={img16} 
           style={{ objectFit: 'cover', height: '200px' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
           <Card.Title>Yes Chapter 1</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+          Yes Entrepreneur Summit: Empowering Visionaries. Join the journey of turning passions into successful ventures!
           </Card.Text>
           <Button 
           onClick={() => { window.location.href = "/yes1" }}
@@ -92,16 +95,17 @@ const Home = () => {
       <Card className="h-100">
         <Card.Img 
           variant="top" 
-          src={yesimage} 
+          src={yes2} 
           style={{ objectFit: 'cover', height: '200px' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
           <Card.Title>Yes Chapter 2</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+          Yes Entrepreneur Summit: Empowering Visionaries. Join the journey of turning passions into successful ventures!
           </Card.Text>
           <Button 
+           onClick={() => { window.location.href = "/yes2" }}
             variant="primary" 
             className="mt-auto"
           >
@@ -115,16 +119,17 @@ const Home = () => {
       <Card className="h-100">
         <Card.Img 
           variant="top" 
-          src={yesimage} 
+          src={yes3} 
           style={{ objectFit: 'cover', height: '200px' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
           <Card.Title>Yes Chapter 3</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+          Yes Entrepreneur Summit: Empowering Visionaries. Join the journey of turning passions into successful ventures!
           </Card.Text>
           <Button 
+           onClick={() => { window.location.href = "/yes3" }}
             variant="primary" 
             className="mt-auto"
           >
