@@ -15,8 +15,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       {/* <Route path="/register" element={<Register/>}/> */}
       <Route path="/yes1" element={<Yes1/>}/>
-      <Route path = "/yes2" element={<Yes2/>}/>
-      <Route path = "/yes3" element={<Yes3/>}/>
+      <Route path="/yes2" element={<Yes2/>}/>
+      <Route path="/yes3" element={<Yes3/>}/>
 
     </Routes>
 
