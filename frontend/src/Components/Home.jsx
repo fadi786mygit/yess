@@ -55,7 +55,7 @@ const Home = () => {
     <h3>YES is a platform to encourage entrepreneurial ideas and talent of young entrepreneurs.</h3>
     <p className="fs-5">Discover, innovate, and inspire through your entrepreneurial journey.</p>
     <button 
-      onClick={() => { window.location.href = "/register" }} 
+      onClick={() => { window.location.href = "https://forms.gle/vuhdVHtPzzyYExvT8"}} 
       className="btn btn-primary mt-3"
     >
       Register Now
