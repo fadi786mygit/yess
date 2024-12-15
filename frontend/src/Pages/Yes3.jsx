@@ -7,7 +7,6 @@ import img4 from '../Components/images/4.jpg'
 const Yes3 = () => {
   return (
     <div>
-      <h1>Fahad Sohail Amir Rafiq Yaqoob Sb</h1>
       <>
       <Carousel>
       <Carousel.Item>
