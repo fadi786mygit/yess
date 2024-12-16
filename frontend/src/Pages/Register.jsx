@@ -30,7 +30,7 @@ const Register = () => {
     if (name && contact && email) {
       try {
         // Submit data to the backend
-        const response = await axios.post("https://yes1-backend.onrender.com/submit", {
+        const response = await axios.post("https://yess-backend.onrender.com/submit", {
           name,
           contact,
           email,
