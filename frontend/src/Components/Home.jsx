@@ -51,7 +51,7 @@ const Home = () => {
       zIndex: 1,
       height: '100%',
       color: '#fff',
-      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)',
+      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)',
     }}
   >
     <h1 className="fs-1 fw-bold">YOUNG ENTREPRENEUR SUMMIT CHAPTERS</h1>
