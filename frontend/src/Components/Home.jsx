@@ -3,7 +3,7 @@ import yesimage from '../Components/images/yesimage.jpg'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import img16 from '../Components/images/16.jpg';
-import yes2 from '../Components/images/yes2.jpg';
+import img25 from '../Components/images/25.jpg';
 import yes3 from '../Components/images/yes3.jpg';
 
 
@@ -72,7 +72,7 @@ const Home = () => {
         <Card.Img 
           variant="top" 
           src={img16} 
-          style={{ objectFit: 'cover', height: '200px' }} 
+          style={{ objectFit: 'cover', height: '200px', opacity: '1' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
@@ -95,8 +95,8 @@ const Home = () => {
       <Card className="h-100">
         <Card.Img 
           variant="top" 
-          src={yes2} 
-          style={{ objectFit: 'cover', height: '200px' }} 
+          src={img25} 
+          style={{ objectFit: 'cover', height: '200px', opacity: '1' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
@@ -120,7 +120,7 @@ const Home = () => {
         <Card.Img 
           variant="top" 
           src={yes3} 
-          style={{ objectFit: 'cover', height: '200px' }} 
+          style={{ objectFit: 'cover', height: '200px', opacity: '1' }} 
           alt="Card image" 
         />
         <Card.Body className="bg-dark text-white d-flex flex-column">
